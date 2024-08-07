@@ -1,0 +1,36 @@
+1.
+package linkedlist;
+
+public class Node {
+    int data ;
+    Node next ;
+
+
+    Node(int data){
+        this.data = data ;
+    }
+
+}
+//main functionpackage linkedlist;
+
+import java.util.Stack;
+
+
+public class main {
+    public static void main(String[] args) {
+        Node head = new Node(5);
+        Node temp = head;
+        int i = 2;
+        int N = 10;
+        while (i <= N) {
+            Node n = new Node(i);
+            temp.next = n;
+            temp = temp.next;
+            i++;
+
+        }
+
+
+
+    }
+}
